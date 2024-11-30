@@ -14,7 +14,9 @@ body {
 .container {
     background-color: aquamarine;
     height: 95vh;
+    min-height: 800px;
     width: 90%;
+    min-width: 900px;
     margin: 0 auto;
     max-width: 1000px;
     display: grid;
@@ -61,7 +63,61 @@ ul {
 }
 .top {
     background-color: beige;
+    font-size: 1.2em;
+padding-left: 5%;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
 
+}
+.searchbar {
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 1fr 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+.searchbar img {
+        height: 1.2em;
+    }
+.searchbar input {
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+}    
+img.portrait {
+    height: 1.4em;
+    padding: 10%;
+    background-color: rgb(204, 204, 67);
+    border-radius: 50%;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr 5fr;
+    align-items: center;
+}
+img.selfimage {
+    height: 2.5em;
+    padding: 10%;
+    background-color: rgb(204, 204, 67);
+    border-radius: 50%;
+}
+.navigation span {
+    font-size: 0.8rem;
+}
+.navigation p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    height: 50%;
+}
+button {
+    margin: 0.8rem;
+    padding: 0.2rem;
+    background-color: rgb(25, 146, 212);
+    color: white;
+    font-weight: 900;
+    border-radius: 1rem;
 }
 .main {
     background-color: burlywood;
